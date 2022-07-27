@@ -2,11 +2,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner ticket = new Scanner(System.in);
-        int price;
+        int ticketPrice;
         System.out.print("Введите стоимость билета: ");
-        price = ticket.nextInt();
+        ticketPrice = ticket.nextInt();
         BonusMilesService service = new BonusMilesService();
-        int miles = service.calculate(price);
+        int miles = service.calculate(ticketPrice);
         System.out.println("Вы заработали " + miles + " миль");
     }
 }
